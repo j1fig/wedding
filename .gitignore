@@ -1,1 +1,11 @@
 private/
+
+*.log
+*.pot
+*.pyc
+*.swp
+*.swo
+*.DS_Store
+*.egg-info/*
+.ropeproject
+build/
