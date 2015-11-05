@@ -8,8 +8,8 @@ git_branch: master
 # Database settings.
 db_user: "{{ application_name }}"
 db_name: "{{ application_name }}"
-db_password: password
-
+db_password: "{{ application_name }}"
+db_url: "postgresql://{{ db_password }}:{{ db_user }}@localhost/{{ db_name }}"
 
 # Gunicorn settings. For the number of workers, a good rule to follow is
 # 2 x number of CPUs + 1
