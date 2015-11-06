@@ -94,6 +94,10 @@ LANGUAGES = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_URL = '/static/'
+# Static files (CSS, JavaScript, Images)
+# Since BASE_DIR='/wedding/settings',
+# set STATIC_ROOT to be '/wedding/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-MEDIA_ROOT
