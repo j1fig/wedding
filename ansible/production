@@ -1,0 +1,7 @@
+[all:vars]
+env=production
+
+[webservers]
+ec2-52-30-42-82.eu-west-1.compute.amazonaws.com
+[dbservers]
+ec2-52-30-42-82.eu-west-1.compute.amazonaws.com
