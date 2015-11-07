@@ -4,6 +4,15 @@
 
 "For perfectionists with deadlines." Indeed.
 
+## Project requirements
+
+1. Map for location with spouses homes, church and party location
+2. Information page with interesting places to visit nearby
+3. BnB information for guests (allocation, sold-out, let us handle it, etc)
+4. Guest confirmations
+5. Gifts (Send e-mail (mailgun) with bank transfer information (to not have bank credentials online))
+6. Contact information (e-mail, phone, address (send by e-mail))
+
 
 ### References
 

@@ -101,4 +101,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-MEDIA_ROOT
-MEDIA_ROOT = os.getenv('MEDIA_ROOT_DIR')
+# Media files
+MEDIA_ROOT = os.getenv('MEDIA_ROOT', os.path.join(BASE_DIR, 'media'))
