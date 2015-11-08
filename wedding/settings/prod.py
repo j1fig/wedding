@@ -12,7 +12,7 @@ TEMPLATE_DEBUG = False
 # SECURE_SSL_REDIRECT = True
 
 ADMINS = (
-    ('Joao Figueiredo', 'joao.figueiredo@brain-e.pt'),
+    ('Joao Figueiredo', 'joaonvfigueiredo@gmail.com'),
 )
 
 ALLOWED_HOSTS = [
