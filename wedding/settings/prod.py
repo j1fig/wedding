@@ -20,3 +20,4 @@ ALLOWED_HOSTS = [
     'ec2-52-30-42-82.eu-west-1.compute.amazonaws.com',
 ]
 
+MEDIA_ROOT = os.getenv('STATIC_ROOT', os.path.join(BASE_DIR, 'static'))
