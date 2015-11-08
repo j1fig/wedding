@@ -17,5 +17,6 @@ ADMINS = (
 
 ALLOWED_HOSTS = [
     '.joao-e-paola.xyz',
+    'ec2-52-30-42-82.eu-west-1.compute.amazonaws.com',
 ]
 
