@@ -1,0 +1,71 @@
+<form action="/guest/" method="post">
+  {% csrf_token %}
+  {{ form.non_field_errors }}
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.email.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.email.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.email }}
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.first_name.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.first_name.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.first_name }}
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.last_name.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.last_name.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.sender }}
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.baby_menu.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.baby_menu.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.baby_menu }}
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.baby_chair.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.baby_chair.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.baby_chair }}
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-12">
+      {{ form.diet_restrictions.errors }}
+    </div>
+    <div class="col-xs-5">
+      {{ form.diet_restrictions.label_tag }}
+    </div>
+    <div class="col-xs-7">
+      {{ form.diet_restrictions }}
+    </div>
+  </div>
+  <input type="submit" value="Submit" />
+</form>

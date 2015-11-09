@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.core.urlresolvers import reverse_lazy
+from django.views.generic import FormView
 
-# Create your views here.
+from core.forms import GuestForm
+
+
+class GuestView(FormView):
+    form_class = GuestForm
+    success_url = reverse_lazy('home:home')
+    template_name = 'core/add_guest.html'
