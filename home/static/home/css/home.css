@@ -27,11 +27,19 @@ html {
     }
 }
 
+#intro {
+    padding: 0;
+}
 
 .intro-container {
     background:  url("/static/home/img/lomo.jpg") center center no-repeat;
     background-size: cover;
     color: white;
+    height: 100%;
+}
+
+.intro-container .row {
+    padding-top: 25%;
 }
 
 .odd-section {
