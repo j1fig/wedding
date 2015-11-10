@@ -13,6 +13,11 @@ if not DEBUG:
 
 LOCAL = True
 
+INSTALLED_APPS += (
+    'raven.contrib.django.raven_compat',
+)
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
