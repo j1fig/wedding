@@ -17,6 +17,10 @@ INSTALLED_APPS += (
     'raven.contrib.django.raven_compat',
 )
 
+# Raven Settings
+RAVEN_CONFIG = {
+        'dsn': os.getenv('WEDDING_SENTRY_DSN'),
+}
 
 LOGGING = {
     'version': 1,
