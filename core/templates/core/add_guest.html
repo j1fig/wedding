@@ -1,4 +1,4 @@
-<form action="/guest/" method="post">
+<form action="/guest/add/" method="post">
   {% csrf_token %}
   {{ form.non_field_errors }}
   <div class="col-xs-12">
@@ -31,7 +31,7 @@
       {{ form.last_name.label_tag }}
     </div>
     <div class="col-xs-7">
-      {{ form.sender }}
+      {{ form.last_name }}
     </div>
   </div>
   <div class="col-xs-12">
@@ -41,7 +41,7 @@
     <div class="col-xs-5">
       {{ form.baby_menu.label_tag }}
     </div>
-    <div class="col-xs-7">
+    <div class="col-xs-1">
       {{ form.baby_menu }}
     </div>
   </div>
@@ -52,7 +52,7 @@
     <div class="col-xs-5">
       {{ form.baby_chair.label_tag }}
     </div>
-    <div class="col-xs-7">
+    <div class="col-xs-1">
       {{ form.baby_chair }}
     </div>
   </div>
@@ -67,5 +67,5 @@
       {{ form.diet_restrictions }}
     </div>
   </div>
-  <input type="submit" value="Submit" />
+  <input id="submit-id-submit" type="submit" value="Submit" />
 </form>
