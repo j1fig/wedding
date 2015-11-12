@@ -1,71 +1,54 @@
 <form action="/guest/add/" method="post">
   {% csrf_token %}
   {{ form.non_field_errors }}
-  <div class="col-xs-12">
-    <div class="col-xs-12">
-      {{ form.email.errors }}
-    </div>
+  <div class="col-xs-12 form-group">
     <div class="col-xs-5">
-      {{ form.email.label_tag }}
+      <label for="{{ form.first_name.id_for_label }}" class="control-label requiredField">
+        First name <span class="asteriskField">*</span>
+      </label>
     </div>
     <div class="col-xs-7">
-      {{ form.email }}
-    </div>
-  </div>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
+      <input id="id_first_name" maxlength="255" name="first_name" type="text" class="form-control textinput textInput form-control">
       {{ form.first_name.errors }}
     </div>
+  </div>
+  <div class="col-xs-12 form-group">
     <div class="col-xs-5">
-      {{ form.first_name.label_tag }}
+      <label for="{{ form.last_name.id_for_label }}" class="control-label requiredField">
+        Last name <span class="asteriskField">*</span>
+      </label>
     </div>
     <div class="col-xs-7">
-      {{ form.first_name }}
-    </div>
-  </div>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
+      <input id="id_last_name" maxlength="255" name="last_name" type="text" class="form-control textinput textInput form-control">
       {{ form.last_name.errors }}
     </div>
-    <div class="col-xs-5">
-      {{ form.last_name.label_tag }}
-    </div>
-    <div class="col-xs-7">
-      {{ form.last_name }}
-    </div>
   </div>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
-      {{ form.baby_menu.errors }}
-    </div>
+  <div class="col-xs-12 form-group">
     <div class="col-xs-5">
       {{ form.baby_menu.label_tag }}
     </div>
     <div class="col-xs-1">
       {{ form.baby_menu }}
+      {{ form.baby_menu.errors }}
     </div>
   </div>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
-      {{ form.baby_chair.errors }}
-    </div>
+  <div class="col-xs-12 form-group">
     <div class="col-xs-5">
       {{ form.baby_chair.label_tag }}
     </div>
     <div class="col-xs-1">
       {{ form.baby_chair }}
+      {{ form.baby_chair.errors }}
     </div>
   </div>
-  <div class="col-xs-12">
-    <div class="col-xs-12">
-      {{ form.diet_restrictions.errors }}
-    </div>
+  <div class="col-xs-12 form-group">
     <div class="col-xs-5">
       {{ form.diet_restrictions.label_tag }}
     </div>
     <div class="col-xs-7">
-      {{ form.diet_restrictions }}
+      <input id="id_diet_restrictions" maxlength="255" name="diet_restrictions" type="text" class="form-control textinput textInput form-control" placeholder="None">
+      {{ form.diet_restrictions.errors }}
     </div>
   </div>
-  <input id="submit-id-submit" type="submit" value="Submit" />
+  <input class="btn btn-default" id="submit-id-submit" type="submit" value="Confirm" />
 </form>

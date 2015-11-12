@@ -27,40 +27,82 @@ html {
     }
 }
 
-#intro {
-    padding: 0;
+.btn-default {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-radius: 0;
 }
 
-.intro-container {
-    background:  url("/static/home/img/lomo.jpg") center center no-repeat;
-    background-size: cover;
+.btn-default:active,
+.btn-default:hover,
+.btn-default:focus {
     color: white;
-    height: 100%;
+    background-color: black;
+    border-color: black;
+    border-radius: 0;
 }
 
-.intro-container .row {
-    padding-top: 25%;
+section .row {
+    padding-top: 8%;
 }
-
-.confirmations-container {
-    padding-top: 50px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 
 .odd-section {
     height: 100%;
-    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .even-section {
     height: 100%;
-    padding-top: 100px;
     text-align: center;
     background: #eee;
+}
+
+#intro {
+    padding: 0;
+}
+
+.photo-container {
+}
+
+.intro-photo {
+    background:  url("/static/home/img/lomo.jpg") center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+
+.intro-photo .row {
+    padding-top: 25%;
+}
+
+#confirmations .row {
+    padding-top: 5%;
+}
+
+.confirm-photo {
+    background:  url("/static/home/img/confirm.jpg") center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+
+.confirmations-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#add_another_guest {
+    margin-top: 30px;
+}
+
+.form-container {
+    padding-top: 30px;
+}
+
+.form-container input {
+    color: black;
 }
 
 .mail a {

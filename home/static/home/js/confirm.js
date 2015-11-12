@@ -4,14 +4,13 @@ var Confirm = (function () {
     var _confirm_container;
     var _form_index = 0;
 
-    var addForm = function () {
+    var _addForm = function () {
       var form = _confirm_container
         .insert('div', ':first-child')
         .attr('id', 'form_'+_form_index)
         .classed('col-xs-4 form-container', true);
       _form_index++;
 
-      console.log(form);
       _displayForm(form, _form_html);
     }
 
@@ -35,6 +34,8 @@ var Confirm = (function () {
             else {
               console.log(form);
               form.remove();
+              d3.select('#confirmations .container-fluid')
+                .classed('confirm-photo', true);
             }
           },
           error: function () {
@@ -42,7 +43,14 @@ var Confirm = (function () {
           }
         });
       });
+    }
 
+    var _bindAddAnotherGuest = function () {
+      $('#add_another_guest').click( function(e){
+        e.preventDefault();
+        _addForm();
+        return false; 
+      });
     }
 
     var _requestGuestForm = function () {
@@ -51,14 +59,15 @@ var Confirm = (function () {
         url: '/guest/add/',
         success: function (data) {
           _form_html = data;
-          addForm();
+          _addForm();
         },
       })
     };
 
     var initialize = function () {
       _confirm_container = d3.select('.confirmations-container');
-      _requestGuestForm();        
+      _requestGuestForm();
+      _bindAddAnotherGuest();
     }
 
     return {
