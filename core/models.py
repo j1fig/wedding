@@ -2,8 +2,9 @@ from django.db import models
 
 
 class Accomodation(models.Model):
-    address = models.CharField(max_length=255)
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
+    url = models.URLField(blank=True,
+                           null=True)
 
 
 class Room(models.Model):
