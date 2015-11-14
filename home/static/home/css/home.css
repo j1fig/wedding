@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 html {
@@ -28,7 +29,7 @@ html {
 }
 
 .btn-default {
-    color: black;
+    color: #777;
     background-color: white;
     border-color: white;
     border-radius: 0;
@@ -38,8 +39,8 @@ html {
 .btn-default:hover,
 .btn-default:focus {
     color: white;
-    background-color: black;
-    border-color: black;
+    background-color: #777;
+    border-color: #777;
     border-radius: 0;
 }
 
@@ -82,7 +83,7 @@ section .row {
 }
 
 .confirm-photo {
-    background:  url("/static/home/img/confirm.jpg") center center no-repeat;
+    background:  url("/static/home/img/confirmations.png") center center no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
@@ -94,21 +95,48 @@ section .row {
 }
 
 #add_another_guest {
-    margin-top: 30px;
+    margin-top: 3vh;
 }
 
 .form-container {
-    padding-top: 30px;
+    padding: 3vh;
+}
+
+.form-container form {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: #777;
+    background: rgba(231, 231, 231, 0.8);
 }
 
 .form-container input {
-    color: black;
+    color: #777;
+}
+
+.visit-photo {
+    background:  url("/static/home/img/visit.jpg") center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+
+.gifts-photo {
+    background:  url("/static/home/img/gifts.jpg") center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
 }
 
 .mail a {
     text-decoration: none;
 }
 
-.contact-title {
-    padding-bottom: 50px;
+#contact #map {
+    width: 100%;
+    height: 50vh;
+    margin-top: 10vh;
+}
+
+#contact .container-fluid {
+    padding: 0;
 }

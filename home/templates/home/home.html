@@ -23,7 +23,7 @@
   </section>
 
   <section id="confirmations" class="even-section">
-    <div class="container-fluid">
+    <div class="container-fluid confirm-photo">
       <div class="row">
         <div class="col-xs-12 confirmations-container">
           <div class="col-xs-4">
@@ -42,14 +42,14 @@
   </section>
   
   <section id="visit" class="even-section">
-    <div class="container">
+    <div class="container-fluid visit-photo">
       <div class="row">
       </div>
     </div>
   </section>
   
   <section id="gifts" class="odd-section">
-    <div class="container">
+    <div class="container-fluid gifts-photo">
       <div class="row">
       </div>
     </div>
@@ -57,15 +57,19 @@
 
   <!-- Contact Section -->
   <section id="contact" class="even-section">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-6 mail">
-          <a href="mailto:joaonvfigueiredo@gmail.com">Joao</a>
+          <a href="mailto:joaonvfigueiredo@gmail.com">joaonvfigueiredo@gmail.com</a>
         </div>
         <div class="col-xs-6 mail">
-          <a href="mailto:paola.frascella@gmail.com">Paola</a>
+          <a href="mailto:paola.frascella@gmail.com">paola.frascella@gmail.com</a>
         </div>
       </div>
+    
+    <!-- Map Section -->
+    <div id="map"></div>
+
     </div>
   </section>
 {% endblock sections %}
@@ -73,6 +77,9 @@
 
 {% block extra_js %}
   <script src="{% static "home/js/jquery.easing.min.js" %}"></script>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
   <script src="{% static "home/js/home.js" %}"></script>
+  <script src="{% static "home/js/map.js" %}"></script>
   <script src="{% static "home/js/confirm.js" %}"></script>
 {% endblock extra_js %}
