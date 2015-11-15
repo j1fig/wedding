@@ -91,4 +91,11 @@ class Command(BaseCommand):
                 .filter(name__in=[a.name for a in accomodations])\
                 .delete()
         else:
-            Accomodation.objects.bulk_create(accomodations)
+            for a in accomodations:
+                Accomodation.objects.get_or_create(
+                    name=a.name,
+                    defaults={
+                        'name': a.name,
+                        'url': a.url
+                    }
+                )
