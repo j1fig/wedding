@@ -35,7 +35,7 @@ var Confirm = (function () {
               console.log(form);
               form.remove();
               d3.select('#confirmations .container-fluid')
-                .classed('confirm-photo', true);
+                .classed({'confirm-success-photo': true, 'confirm-photo': false});
             }
           },
           error: function () {

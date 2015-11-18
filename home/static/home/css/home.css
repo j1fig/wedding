@@ -89,6 +89,13 @@ section .row {
     height: 100%;
 }
 
+.confirm-success-photo {
+    background:  url("/static/home/img/confirm_success.jpg") center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+
 .confirmations-container {
     padding-left: 0;
     padding-right: 0;
