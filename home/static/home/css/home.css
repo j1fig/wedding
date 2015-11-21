@@ -138,7 +138,7 @@ section .row {
 
 #where_to_stay a {
     text-decoration: none;
-    color: #1b809e;
+    color: #5e9ccd;
 }
 #where_to_stay a:active,
 #where_to_stay a:hover,
@@ -146,11 +146,24 @@ section .row {
     color: #4f9fcf;
 }
 
+#visit .row {
+    padding-top: 6%;
+}
+
 .visit-photo {
     background:  url("/static/home/img/visit.jpg") center center no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
+}
+
+.visit-header {
+    padding-bottom: 2%;
+}
+
+#visit .visit-header,
+#visit h4 {
+    color: #51544b;
 }
 
 .gifts-photo {
