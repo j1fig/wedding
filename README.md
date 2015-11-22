@@ -13,6 +13,12 @@
 5. Gifts (Send e-mail (mailgun) with bank transfer information (to not have bank credentials online))
 6. Contact information (e-mail, phone, address (send by e-mail))
 
+## Cheatsheet
+
+Push to production by
+
+    ansible-playbook -i production site.yml --ask-vault-pass -vvvv
+
 
 ### References
 
