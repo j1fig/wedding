@@ -24,8 +24,9 @@ def get_accomodations():
             'url': "http://www.palazzosantorelli.it/"
         },
         {
-            'name': "Il solito Posto Bnb",
-            'url': "www.booking.com/hotel/it/b-amp-b-il-solito-posto.html"
+            'name': "Il Solito Posto",
+            'url': "http://www.booking.com/hotel/"
+                   "it/b-amp-b-il-solito-posto.html"
         },
         {
             'name': "Chianca",
@@ -40,18 +41,6 @@ def get_accomodations():
             'url': "http://www.t57domus.it/vicostorto/"
         },
         {
-            'name': "Cappuccini",
-            'url': ""
-        },
-        {
-            'name': "San Lorenzo",
-            'url': "http://www.bebsanlorenzo.it/"
-        },
-        {
-            'name': "Palazzo Sienna de Facendis",
-            'url': "https://www.airbnb.com/rooms/5897103"
-        },
-        {
             'name': "Domus Artis",
             'url': "http://www.booking.com/hotel/it/bed-amp-breakfast.html"
         },
@@ -60,7 +49,7 @@ def get_accomodations():
             'url': "http://www.ilcimiero.it/"
         },
         {
-            'name': "Stanza privata Il Duca di Montemar",
+            'name': "Duca di Montemar",
             'url': "https://www.airbnb.com/rooms/5687808"
         }
     ]
@@ -91,11 +80,5 @@ class Command(BaseCommand):
                 .filter(name__in=[a.name for a in accomodations])\
                 .delete()
         else:
-            for a in accomodations:
-                Accomodation.objects.get_or_create(
-                    name=a.name,
-                    defaults={
-                        'name': a.name,
-                        'url': a.url
-                    }
-                )
+            Accomodation.objects.all().delete()
+            Accomodation.objects.bulk_create(accomodations)

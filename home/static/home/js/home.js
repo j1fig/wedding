@@ -17,3 +17,8 @@ $(function() {
     event.preventDefault();
   });
 });
+
+// jQuery activate tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

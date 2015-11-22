@@ -133,16 +133,26 @@ section .row {
 }
 
 .accomodations-container {
-    margin-top: 10vh;
+    margin-top: 2%;
 }
 
-#where_to_stay a {
-    text-decoration: none;
-    color: #5e9ccd;
+.accomodation {
+    margin-bottom: 1%;
+    background: rgba(138, 109, 59, 0.8);
 }
-#where_to_stay a:active,
-#where_to_stay a:hover,
-#where_to_stay a:focus {
+
+.accomodation p {
+    margin: 10px 0 10px;
+}
+
+.accomodation a {
+    text-decoration: none;
+    color: #fcf8e3;
+}
+
+.accomodation a:active,
+.accomodation a:hover,
+.accomodation a:focus {
     color: #4f9fcf;
 }
 
@@ -161,9 +171,33 @@ section .row {
     padding-bottom: 2%;
 }
 
-#visit .visit-header,
-#visit h4 {
+#visit .visit-header {
     color: #51544b;
+}
+
+.visit-container {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.visit-container a {
+    text-decoration: none;
+    color: #e29c9a;
+}
+.visit-container a:active,
+.visit-container a:hover,
+.visit-container a:focus {
+    color: #c6cdd5;
+}
+
+#visit h3 {
+    color: white;
+    padding-bottom: 3%;
+}
+
+.visit-area {
+    color: #c6cdd5;
+    background: rgba(85, 89, 100, 0.65);
 }
 
 .gifts-photo {
