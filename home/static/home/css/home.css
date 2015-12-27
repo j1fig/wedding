@@ -207,6 +207,15 @@ section .row {
     height: 100%;
 }
 
+.gifts-bottom-text {
+    margin-top: 50vh;
+}
+
+.gifts-bottom-text a {
+    color: white;
+    text-decoration: underline;
+}
+
 .mail a {
     text-decoration: none;
 }
